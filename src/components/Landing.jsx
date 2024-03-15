@@ -24,7 +24,6 @@ export const Landing = () => {
                     <div className='group-hover:bg-black group-hover:text-white transition border-2 p-1 rounded-full'>
                         <FaArrowRight />
                     </div>
-                    
                 </div>
             </div>
         </div>
