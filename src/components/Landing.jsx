@@ -5,8 +5,13 @@ export const Landing = () => {
     return (
         <div className='w-full h-screen bg-white pt-2'>
             <div className='textstructure mt-32 px-20'>
-                <h1>{['WE Craft','EYE OPENING','Software solutions'].map((item,index)=>{
-                    return <h1 className='uppercase text-8xl leading-none tracking-tighter' key={index}>{item}</h1>
+            <h1>{['WE Craft','EYE OPENING','Software solutions'].map((item,index)=>{
+                    return (
+                        <div className='flex items-center'>
+                            {index === 1 &&(<div className='w-[130px] bg-green-500 h-[5vw] rounded-md mt-3'></div>)}
+                            <h1 className='uppercase text-9xl leading-none tracking-tighter font-bold' key={index}>{item}</h1>
+                        </div>
+                    )
                 })}</h1>
                 
             </div>
